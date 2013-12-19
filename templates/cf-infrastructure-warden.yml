@@ -9,7 +9,7 @@ meta:
 
 compilation:
   workers: 6
-  network: services1
+  network: services2
   reuse_compilation_vms: true
   cloud_properties:
     name: random
@@ -17,7 +17,7 @@ compilation:
 resource_pools:
   - name: services-small
     size: 2
-    network: services1
+    network: services2
     stemcell: (( meta.stemcell ))
     cloud_properties:
       name: random
